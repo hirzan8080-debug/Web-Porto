@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
+    <meta
+      name="description"
+      content="Official portfolio of Hirzan: student, HTML, CSS, and JavaScript developer."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark">H</span>
+          <span>
+            <strong>Hirzan</strong>
+            <small>New Projects</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="#profile">Profile</a>
+          <a href="#about">Description</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Web Portfolio · HTML · CSS · JavaScript</p>
+            <h1>Hi, I’m Hirzan.</h1>
+            <p class="lede">
+              I writing code with HTML, Javascript, and css.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">See projects</a>
+              <a class="btn ghost" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <aside class="profile-card" id="profile">
+            <p class="card-label">Profile</p>
+            <div class="avatar" aria-hidden="true">H</div>
+            <h2>Muhammad Hirzan Adighana</h2>
+            <p class="role">Student of Computer Engineering</p>
+            <dl class="meta">
+              <div>
+                <dt>Create</dt>
+                <dd>Portofolio</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>HTML, CSS, JavaScript</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Student</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>Official Description</h2>
+          <p class="official">
+            I'm a Computer Engineering student the class of 2025 at ITS, currently developing my 
+            programming skills by writing code using C/C++, Python, HTML, CSS, and Javascript. My 
+            current focus is on creating website designs that i will later use to develop my business 
+            ideas and implement them broadly. 
+          </p>
+        </div>
+      </section>
+
+      <section id="education" class="section alt">
+        <div class="container">
+          <h2>Education</h2>
+          <article class="edu-card">
+            <p class="year">Ongoing</p>
+            <h3>Student of Computer Engineering </h3>
+            <p>
+              Studying programming fundamentals with a focus on the web:
+              semantic HTML, CSS layout, and JavaScript for the browser.
+            </p>
+            <ul>
+              <li>HTML structure and accessible pages</li>
+              <li>CSS layout, color, and responsive design</li>
+              <li>JavaScript for navigation, filtering, and UI state</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <div class="filters" role="group" aria-label="Filter projects">
+              <button type="button" class="chip is-active" data-filter="all">All</button>
+              <button type="button" class="chip" data-filter="html">HTML</button>
+              <button type="button" class="chip" data-filter="js">JavaScript</button>
+            </div>
+          </div>
+          <div class="project-grid" id="project-grid"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Want to collaborate or leave a note? Use this form — it stays on this page.</p>
+          <form id="contact-form" class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" required placeholder="Your name" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" required rows="4" placeholder="Hello Hirzan…"></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send message</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Hirzan · Lumen Folio template</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
